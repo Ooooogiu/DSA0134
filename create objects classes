@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+class sample{
+	public:
+		int a,b, c;
+		void getdata();
+		void putdata();
+		void add();
+		};
+void sample::getdata()
+{
+	cout<<"Enter the a value";
+	cin>>a;
+	cout<<"Enter the b value";
+	cin>>b;
+  }
+void sample::putdata()
+{
+	cout<<"The values of a and b is"<<a<<"\t"<<b<<"\n";
+	
+}
+void sample::add()
+{
+	c=a+b;
+  cout<<"addition of a+b="<<c;
+	
+}
+int main()
+{
+	sample s;
+	s.getdata();
+	s.putdata();
+	s.add();
+	return 0;
+  }
