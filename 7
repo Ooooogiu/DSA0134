@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+class employee
+{
+	int   emp_ID;
+	char  emp_name[20];
+	float emp_net_sal;
+
+	public:
+		void get_emp_details();
+		void show_emp_details();
+};
+
+void employee :: get_emp_details()
+{
+	cout<<"\nEnter employee ID: ";
+	cin>>emp_ID;
+	cout<<"\nEnter employee name: ";
+	cin>>emp_name;
+	cout<<"\nEnter employee salary: ";
+	cin>>emp_net_sal;
+}
+	
+void employee :: show_emp_details()
+{
+	cout<<"\n\n** Details of  Employee **";
+	cout<<"\nEmployee Name      :  "<<emp_name;
+	cout<<"\nEmployee ID    :  "<<emp_ID;
+	cout<<"\nBasic salary       :  "<<emp_net_sal;
+	cout<<"\n-------------------------------\n\n";
+}
+
+
+int main()
+{
+	  employee emp;
+    
+    emp.get_emp_details();
+    emp.show_emp_details();
+
+    return 0;
+}
