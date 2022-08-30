@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+string isPalindrome(string S)
+{
+	string P = S;
+
+	
+	reverse(P.begin(), P.end());
+
+
+	if (S == P) {
+		
+		return "Given string is a palidrome";
+	}
+
+	else {
+	
+		return "Given string is not a palidrome";
+	}
+}
+
+
+int main()
+{
+	string S;
+	cout<<"Enter a string: ";
+	cin>>S;
+	cout << isPalindrome(S);
+
+	return 0;
+}
